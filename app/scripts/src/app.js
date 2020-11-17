@@ -13,8 +13,7 @@ class ChatApp {
     this.chatForm = new ChatForm(FORM_SELECTOR, INPUT_SELECTOR);
     this.chatList = new ChatList(LIST_SELECTOR, username);
 
-    // 3001 used by index
-    socket.init("ws://localhost:3002");
+    socket.init("ws://localhost:3001");
     socket.registerOpenHandler(() => {
       this.chatForm.init((text) => {
         let message = new ChatMessage({ message: text });

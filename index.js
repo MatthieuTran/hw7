@@ -29,5 +29,4 @@ const server = http.createServer((req, res) => {
   });
 });
 
-// Port 3000 was in use
-server.listen(3001);
+server.listen(3000);

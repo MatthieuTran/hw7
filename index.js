@@ -28,5 +28,5 @@ const server = http.createServer((req, res) => {
     }
   });
 });
-
+console.log('running on 3000');
 server.listen(3000);
